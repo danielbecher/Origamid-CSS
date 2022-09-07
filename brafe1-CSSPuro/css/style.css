@@ -1,5 +1,4 @@
 /* Reset */
-
 body, h1, h2, h3, p, ul {
     padding: 0;
     margin: 0;
@@ -54,6 +53,20 @@ body {
     font-size: 1.125em;
 }
 
+@media  (max-width: 739px) {
+    .menu {
+        text-align: center;
+    }
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+    }
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+}
+
 /* Intro */
 
 .intro {
@@ -81,6 +94,12 @@ body {
 .intro p {
     font-style: italic;
     font-size: 1.125em;
+}
+
+@media  (max-width: 739px) {
+    .intro {
+        padding: 40px 0;
+    }
 }
 
 /* Sobre */
@@ -138,6 +157,25 @@ body {
     text-align: center;
     margin: 20px auto;
     max-width: 460px;
+}
+
+@media  (min-width: 740px) and (max-width: 980px) {
+    .sobre-container {
+        max-width: 720px;
+    }
+    .sobre-item {
+        width: 340px;
+    }
+}
+
+@media  (max-width: 739px) {
+    .sobre-container {
+        width: 340px;
+    }
+    .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 
 /* Produtos */
@@ -215,6 +253,25 @@ h2.produtos-mineiro::before {
     margin: 20px auto 0 auto;
 }
 
+@media  (min-width: 740px) and (max-width: 980px) {
+    .produtos-container {
+        max-width: 720px;
+    }
+    .produtos-item {
+        width: 220px;
+    }
+}
+
+@media  (max-width: 739px) {
+    .produtos-container {
+        max-width: 300px;
+    }
+    .produtos-item {
+        width: 300px;
+        margin: 10px auto 0 auto;
+    }
+}
+
 /* Locais */
 
 .locais {
@@ -266,6 +323,28 @@ h2.produtos-mineiro::before {
     border: 3px solid;
     color: #252525;
     padding: 10px 20px;
+}
+
+@media  (min-width: 740px) and (max-width: 980px) {
+    .locais {
+        max-width: 720px;
+    }
+    .locais-item > div {
+        width: 340px;
+    }
+    .locais-item img {
+        width: 340px;
+    }
+}
+
+@media  (max-width: 739px) {
+    .locais-item img, .locais-item > div {
+        width:300px;
+        margin: 0;
+    }
+    .locais {
+        max-width: 300px;
+    }
 }
 
 /* Assine */
@@ -334,6 +413,32 @@ h2.produtos-mineiro::before {
     cursor: pointer;
 }
 
+@media  (min-width: 740px) and (max-width: 980px) {
+    .assine-container {
+        max-width: 720px;
+    }    
+    .assine-info {
+        width: 340px;
+    }
+
+    .assine form {
+        width: 340px;
+    }
+    .assine input {
+        width: 340px;
+    }
+}
+
+@media  (max-width: 739px) {
+    .assine-container{
+        width: 300px;
+    }
+    .assine-info, .assine form, .assine input {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
+}
+
 /* Footer */
 
 .footer {
@@ -363,4 +468,18 @@ h2.produtos-mineiro::before {
     float: right;
     margin: 0 10px;
     display: block;
+}
+
+@media  (max-width: 739px) {
+    .footer-container {
+        max-width: 300px;
+    }
+    .footer img {
+        float: none;
+        margin: 20px 0;
+    }
+    .footer p {
+        float: none;
+        margin: 0;
+    }
 }
